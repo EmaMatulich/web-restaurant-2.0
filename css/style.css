@@ -150,12 +150,12 @@ div.msj-central>h2 {
 
 /*Configuracion seccion lugar*/
 
-section#lugar>div.contenedor-der>h3{
+#lugar>div.contenedor-der>h3{
   margin-top: 0;
 }
 
 /*Configuracion seccion galeria de comidas*/
-section#foodgalery{
+#foodgalery{
   background-color: rgb(240, 240, 240);
   overflow: auto;
   width: 100%;
@@ -178,18 +178,18 @@ div.tarjeta>img.img-tarjeta{
   display: block;
 }
 /*Configuracion secicon menu*/
-section#menu>div.contenedor-con-margen>div.contenedor-izq {
+#menu>div.contenedor-con-margen>div.contenedor-izq {
   width: 40%;
   box-sizing: border-box;
   margin-right: 10%;
 }
 
-section#menu>div.contenedor-con-margen>div.contenedor-der {
+#menu>div.contenedor-con-margen>div.contenedor-der {
   box-sizing: border-box;
   width: 40%;
   margin-left: 10%;
 }
-section#menu>h3{
+#menu>h3{
   margin: 5% 0 2% 0;
 }
 ul.lista-menu{
@@ -204,7 +204,7 @@ span.puntos:before{
   content: '..........';
 }
 /*Configuracion seccion anecdotas*/
-section#anecdotas>h3{
+#anecdotas>h3{
   padding-top: 2%;
   margin: 0 0 2% 0;
 }
