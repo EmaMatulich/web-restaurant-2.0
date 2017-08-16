@@ -150,34 +150,42 @@ div.msj-central>h2 {
 
 /*Configuracion seccion lugar*/
 
-#lugar>div.contenedor-der>h3{
+#lugar>div.contenedor-der>h3 {
   margin-top: 0;
 }
 
+
 /*Configuracion seccion galeria de comidas*/
-#foodgalery{
+
+#foodgalery {
   background-color: rgb(240, 240, 240);
   overflow: auto;
   width: 100%;
 }
-div.tarjeta{
-  float:left;
+
+div.tarjeta {
+  float: left;
   box-sizing: border-box;
   margin: 1%;
   width: 23%;
   padding: 1.5%;
   background-color: white;
 }
-div.tarjeta:hover{
-    cursor: pointer;
-    box-shadow: 6px 6px 5px #666;
+
+div.tarjeta:hover {
+  cursor: pointer;
+  box-shadow: 6px 6px 5px #666;
 }
-div.tarjeta>img.img-tarjeta{
+
+div.tarjeta>img.img-tarjeta {
   width: 100%;
-  height:150px;
+  height: 150px;
   display: block;
 }
+
+
 /*Configuracion secicon menu*/
+
 #menu>div.contenedor-con-margen>div.contenedor-izq {
   width: 40%;
   box-sizing: border-box;
@@ -189,40 +197,54 @@ div.tarjeta>img.img-tarjeta{
   width: 40%;
   margin-left: 10%;
 }
-#menu>h3{
+
+#menu>h3 {
   margin: 5% 0 2% 0;
 }
-ul.lista-menu{
+
+ul.lista-menu {
   list-style-type: none;
 }
-ul.lista-menu li p{
+
+ul.lista-menu li p {
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-span.puntos:before{
+
+span.puntos:before {
   content: '..........';
 }
+
+
 /*Configuracion seccion anecdotas*/
-#anecdotas>h3{
+
+#anecdotas>h3 {
   padding-top: 2%;
   margin: 0 0 2% 0;
 }
-p.tarjeta-recomendacion{
+
+p.tarjeta-recomendacion {
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 26px;
-  background-color:  rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
   text-align: center;
 }
-p.tarjeta-recomendacion:before,p.tarjeta-recomendacion:after{
+
+p.tarjeta-recomendacion:before, p.tarjeta-recomendacion:after {
   content: '"';
 }
-p.tarjeta-recomendacion:hover{
+
+p.tarjeta-recomendacion:hover {
   cursor: pointer;
   box-shadow: 6px 6px 5px #666;
 }
+
+
 /*Configuracion slider generico*/
+
+
 /* Contenedor del carousel */
 
 .carousel-contenedor {
@@ -318,8 +340,10 @@ p.tarjeta-recomendacion:hover{
   }
 }
 
+
 /*Seccion contacto footer*/
-footer{
+
+footer {
   background-image: url(../imagenes/home/footer.jpg);
   height: 100%;
   background-attachment: fixed;
@@ -328,29 +352,143 @@ footer{
   background-size: cover;
   color: white;
 }
+
 footer>div.contenedor-con-margen>div.contenedor-izq {
   width: 20%;
   box-sizing: border-box;
   margin-right: 15%;
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
 footer>div.contenedor-con-margen>div.contenedor-der {
   box-sizing: border-box;
   width: 20%;
   margin-left: 15%;
-    margin-right: 15%;
+  margin-right: 15%;
 }
-footer>div.contenedor-con-margen{
+
+footer>div.contenedor-con-margen {
   margin-bottom: 0 !important;
 }
 
-footer p{
+footer p {
   font-size: 16px;
 }
-footer h4{
+
+footer h4 {
   font-size: 18px;
 }
-footer span{
+
+footer span {
   font-weight: bold;
+}
+
+
+/*Diseño responsive maximo 481 pixeles*/
+
+@media screen and (max-width: 481px) {
+  /*Configuraciones genericas*/
+  .contenedor-con-margen {
+    display: block !important;
+    margin: auto !important;
+  }
+  /*Configuracion del header*/
+  header.contenedor {
+    display: block;
+    text-align: center;
+  }
+  div.header-logo {
+    width: auto;
+    margin: 5% auto 5% auto;
+  }
+  div.header-logo>a, div.header-logo>a:link, div.header-logo>a:visited, div.header-logo>a:focus, div.header-logo>a:hover, div.header-logo>a:active {
+    font-size: 34px;
+    display: inline;
+  }
+  nav.nav-bar {
+    width: auto;
+  }
+  ul.nav-bar {
+    padding: 0;
+    float: none;
+    display: block;
+  }
+  ul.nav-bar li {
+    float: none;
+    display: block;
+  }
+  ul.nav-bar li a, ul.nav-bar li a:link, ul.nav-bar li a:visited {
+    display: block;
+    border-top: 1px solid rgb(92, 92, 92);
+  }
+  ul.nav-bar li a:focus, ul.nav-bar li a:hover, ul.nav-bar li a:active {
+    color: black;
+    border-top: 1px solid black;
+  }
+  /*Configuracion seccion lugar*/
+  #lugar>div.contenedor-izq {
+    display: none;
+  }
+  #lugar>div.contenedor-der {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding-bottom: 3%;
+  }
+  #lugar>div.contenedor-der>h3 {
+    margin-top: 3%;
+    font-size: 24px;
+  }
+  /*Configuracion food galery*/
+  #foodgalery{
+    padding-bottom: 3%;
+  }
+  #foodgalery>h3 {
+    margin-top: 3%;
+    font-size: 24px;
+  }
+  div.tarjeta {
+    float: none;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    margin: 3% 10%;
+    padding: 5%;
+  }
+  /*Configuracion seccion anecdotas*/
+  #anecdotas{
+    padding-bottom: 3%;
+  }
+  #anecdotas>div.contenedor-con-margen>div.contenedor-izq {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+  #anecdotas>div.contenedor-con-margen>div.contenedor-der {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+  #anecdotas>h3 {
+    margin-top: 3%;
+    font-size: 24px;
+  }
+  .img-slide {
+    height: auto;
+  }
+  /*Configuracion footer*/
+  footer>div.contenedor-con-margen>div.contenedor-izq {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+  footer>div.contenedor-con-margen>div.contenedor-der {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+  footer{
+    padding-top: 3%;
+  }
+  footer h2{
+    font-size: 26px !important;
+  }
+  footer h4, footer p{
+    font-size: 20px !important;
+  }
 }
